@@ -2,7 +2,8 @@
 
 ## 有标签数据
 
-数据都在voi文件夹中 
+原始数据都在dat文件夹里
+处理数据都在voi文件夹中 
 
 
 **》voi** 
@@ -38,9 +39,18 @@
   
     13×5个MFCC - 8×5个scaner - 1个label - A/B - driver - task - point
 
+   然后把后4列删掉存储在里dat/input_label.csv
+
+   然后把23-4 28-5 label从4改成5 重新存储为dat/input_label0.csv
+   
+
+   **separate.py** 是用来分割训练集和测试集
+   
+
 ## 无标签数据
 
-
+   **trans.py** 是用来把unlabel里面分号分隔的csv变成好编辑的逗号分割csv
+   
    **》csv**：提取音频里的MFCC特征
     
     时间 - 13个MFCC特征
@@ -65,5 +75,13 @@
   》**feature_allin2.csv**
   
     13×5个MFCC - 8×5个scaner - A/B - driver - point
+    
+   然后把后三列删掉存储在里dat/input_unlabel.csv
+
+
+
+
+
+
     
   
