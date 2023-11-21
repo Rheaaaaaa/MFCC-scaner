@@ -2,13 +2,17 @@
 
 ## 有标签数据
 
-数据都在voi文件夹中
-**》voi**
-  **》WAV**：裁剪好的音频
-    a/b + driver .WAV
-  |
-  | **mfcc.py**
-  ↓
+数据都在voi文件夹中 
+
+
+**》voi** 
+
+  **》WAV**：裁剪好的音频 
+  
+    a/b + driver .WAV 
+  | 
+  | **mfcc.py** 
+  ↓ 
   》**csv**：提取音频里的MFCC特征
     时间 - 13个MFCC特征
     a/b + driver .csv
